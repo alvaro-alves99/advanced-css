@@ -5,3 +5,7 @@
         clear: both;
     }
 }
+
+@mixin sombra{
+    box-shadow: 0 1rem 2rem rgba($black, .2);
+}
