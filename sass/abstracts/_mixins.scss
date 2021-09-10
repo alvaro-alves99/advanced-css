@@ -9,3 +9,7 @@
 @mixin sombra{
     box-shadow: 0 1rem 2rem rgba($black, .2);
 }
+
+@mixin BGHeroGradiente{
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-primary-dark, .8)), url("../img/hero.jpg");
+}

@@ -50,12 +50,10 @@ body {
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 700;
-  text-transform: uppercase;
-  text-align: left; }
+  text-transform: uppercase; }
 
 .paragraph {
-  font-size: 1.6rem;
-  text-align: left; }
+  font-size: 1.6rem; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -67,6 +65,30 @@ body {
 
 .u-mb-2 {
   margin-bottom: 2rem; }
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 3rem 3rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: .4s; }
+  .feature-box__icon {
+    display: inline-block;
+    font-size: 6rem;
+    margin-bottom: 0.5rem;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-align: center; }
+  .feature-box__text {
+    font-size: 1.2rem;
+    text-align: center; }
+  .feature-box:hover {
+    transform: translateY(-1.5rem); }
 
 .btn:link, .btn:visited {
   text-transform: uppercase;
@@ -174,12 +196,27 @@ body {
   font-weight: 700;
   background-image: linear-gradient(to right, #7ed56f, #28b485);
   -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
   transition: .2s; }
   .heading-secondary:hover {
     transform: skewy(2deg) skewx(15deg) scale(1.1);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
     letter-spacing: 2px; }
+
+.section-features {
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../img/hero.jpg");
+  background-size: cover;
+  transform: skewY(-7deg);
+  margin-top: -5rem; }
+  .section-features > * {
+    transform: skewY(7deg); }
+
+.section-tours {
+  background-color: #f7f7f7;
+  padding: 25rem 0 50rem 0;
+  margin-top: -10rem; }
 
 .row {
   max-width: 114rem;

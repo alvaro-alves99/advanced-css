@@ -11,6 +11,7 @@
     font-weight: 700;
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
     -webkit-background-clip: text;
+    background-clip:text;
     color:transparent;
     transition: .2s;
 
@@ -19,4 +20,22 @@
         text-shadow: .5rem 1rem 2rem rgba($black, .2);
         letter-spacing: 2px;
     }
+}
+
+.section-features{
+    padding: 20rem 0;
+    @include BGHeroGradiente;
+    background-size:cover;
+    transform: skewY(-7deg);
+    margin-top:-5rem;
+
+    & > *{
+        transform: skewY(7deg);
+    }
+}
+
+.section-tours{
+    background-color: $color-grey-dark-1;
+    padding: 25rem 0 50rem 0;
+    margin-top: -10rem;
 }

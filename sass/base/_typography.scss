@@ -10,12 +10,10 @@ body{
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
-    text-align: left;
 }
 
 .paragraph{
     font-size: $default-font-size;
-    text-align: left;
 
     &:not(:last-child){
         margin-bottom: 3rem;
