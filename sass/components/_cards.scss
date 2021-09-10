@@ -1,0 +1,58 @@
+.card{
+    perspective: 150rem;
+    position: relative;
+    height:50rem;
+    
+
+    &__side{
+        background-color:red;
+        color: $white;
+        font-size: 2rem;
+        height:50rem;
+        width: 100%;
+        transition:1s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        backface-visibility: hidden;
+        border-radius: 3px;
+        @include sombra;
+
+        &--front{
+            background-color:$white;
+        }
+
+        &--back{
+            transform:rotateY(180deg);
+
+            &--1{
+                background-image: linear-gradient(to bottom right, $color-secondary-light, $color-secondary-dark);
+            }
+        }
+    }
+
+    &:hover &__side--front{
+        transform:rotateY(180deg);
+    }
+
+    &:hover &__side--back{
+        transform:rotateY(360deg);
+    }
+
+    &__picture{
+        background-size:cover;
+        height:23rem;
+
+        &--1{
+            background-image:url(../../img/nat-5.jpg);
+        }
+
+        &--2{
+            background-image:url(../../img/nat-5.jpg);
+        }
+
+        &--3{
+            background-image:url(../../img/nat-5.jpg);
+        }
+    }
+}
