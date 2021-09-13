@@ -10,6 +10,45 @@
     box-shadow: 0 1rem 2rem rgba($black, .2);
 }
 
+@mixin borda-arredondada{
+    border-radius: 3px;
+}
+
 @mixin BGHeroGradiente{
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, .8), rgba($color-primary-dark, .8)), url("../img/hero.jpg");
+}
+
+//  MEDIA QUERY MANAGER
+
+// 0 - 600
+// 600 - 900
+// 900 - 1200
+// 1200 - 166
+
+// 1800 +
+
+@mixin respond-phone{
+    @media only screen and(max-width: 600px){
+        @content
+    }
+};
+
+@mixin responsive($breakpoint){
+    @if $breakpoint == phone{
+        @media (max-width: 37.5em){
+            @content
+        }
+    };
+
+    @if $breakpoint == tablet{
+        @media (max-width: 600px){
+            @content
+        }
+    };
+
+    @if $breakpoint == notebook{
+        @media (max-width: 600px){
+            @content
+        }
+    };
 }
